@@ -1,0 +1,274 @@
+body {
+  background-color: white;
+  text-align: center;
+  font-family: century schoolbook;
+  color: #a88b21; }
+
+a {
+  text-decoration: none;
+  color: #a88b21; }
+
+/*h3{
+  font-size: 150%;
+}*/
+.jubilee {
+  height: 200px;
+  color: #a88b21;
+  background-color: white;
+  font-size: 150%;
+  padding-top: 20px; }
+
+.kontakt {
+  background-color: #882024;
+  text-align: right;
+  color: #a88b21;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px; }
+
+.logo {
+  background-color: white;
+  width: 80%;
+  text-align: left;
+  padding: 5px;
+  height: auto; }
+
+nav {
+  text-align: right;
+  padding-right: 10px; }
+
+footer {
+  background-color: #882024;
+  color: #a88b21; }
+
+.fleft {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.icons {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.iconSpacing {
+  padding-left: 10px; }
+
+.button {
+  background-color: #3f281a;
+  border: none;
+  color: #a88b21;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+/*.wrapper{
+  // width: 80%;
+  // margin: auto;
+}*/
+/*.toAlign{
+  width: 80%;
+  // background-color: lightblue;
+  margin: auto;
+}*/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    body {
+      display: grid;
+      color: #a88b21;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "sec1 sec1" "wrapper1 wrapper1" "footer footer"; }
+      body nav {
+        text-align: right;
+        padding-top: 120px;
+        padding-right: 5px; }
+
+    .sec1 {
+      grid-area: sec1;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "toAlign2 toAlign2"; }
+
+    .toAlign2 {
+      grid-area: toAlign2;
+      width: 80%;
+      margin: auto; }
+
+    .wrapper1 {
+      grid-area: wrapper1;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "sec2 sec2_2" "sec3 sec3" "sec4 sec5" "sec6 sec7" "sec8 sec8" "sec9 sec9" "sec10 sec10"; }
+
+    .sec2 {
+      grid-area: sec2; }
+      .sec2 img {
+        height: auto;
+        width: 80%; }
+
+    .sec2_2 {
+      grid-area: sec2_2; }
+
+    .sec3 {
+      grid-area: sec3;
+      width: 100%; }
+
+    .sec4 {
+      grid-area: sec4; }
+
+    .sec5 {
+      grid-area: sec5;
+      background-color: white;
+      padding: 1px; }
+      .sec5 h3 {
+        font-size: 100%; }
+
+    .sec6 {
+      grid-area: sec6; }
+
+    /*.sec6_1{
+      grid-area: sec6_1;
+    }*/
+    .sec7 {
+      grid-area: sec7;
+      padding: 1px; }
+      .sec7 h3 {
+        font-size: 100%; }
+
+    .sec8 {
+      grid-area: sec8;
+      width: 100%; }
+
+    .sec9 {
+      grid-area: sec9; }
+
+    .sec10 {
+      grid-area: sec10;
+      width: 100%; }
+
+    footer {
+      grid-area: footer;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "toAlign1 toAlign1"; }
+
+    .toAlign1 {
+      grid-area: toAlign1;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "fleft fright"; }
+
+    .fleft {
+      grid-area: fleft;
+      text-align: left; }
+
+    .fright {
+      grid-area: fright; } } }
+@supports (grid-area: auto) {
+  @media screen and (min-width: 800px) {
+    body {
+      margin: auto;
+      color: #a88b21;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "sec1 sec1" "wrapper1 wrapper1" "footer footer"; }
+      body nav {
+        text-align: right;
+        padding-top: 120px;
+        padding-right: 10px; }
+
+    .sec1 {
+      grid-area: sec1;
+      text-align: right; }
+
+    .wrapper1 {
+      display: grid;
+      width: 80%;
+      margin: auto;
+      grid-area: wrapper1;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "sec2 sec2_2" "sec3 sec3" "sec4 sec5" "sec6 sec7" "sec8 sec8" "sec9 sec9" "sec10 sec10"; }
+
+    .sec2 {
+      grid-area: sec2;
+      text-align: left; }
+      .sec2 img {
+        height: auto;
+        width: 80%; }
+
+    .sec2_2 {
+      grid-area: sec2_2;
+      background-color: white; }
+
+    .sec3 {
+      grid-area: sec3; }
+
+    .sec4 {
+      grid-area: sec4;
+      padding: 15px; }
+
+    .sec5 {
+      grid-area: sec5;
+      background-color: white;
+      padding: 5px; }
+      .sec5 h3 {
+        font-size: 150%; }
+
+    .sec6 {
+      grid-area: sec6;
+      padding: 15px; }
+
+    .sec7 {
+      grid-area: sec7;
+      background-color: white;
+      padding: 5px; }
+      .sec7 h3 {
+        font-size: 150%; }
+
+    .sec8 {
+      grid-area: sec8; }
+
+    .sec9 {
+      grid-area: sec9;
+      background-color: white;
+      padding: 5px; }
+
+    .sec10 {
+      grid-area: sec10;
+      width: 100%; }
+
+    footer {
+      grid-area: footer;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "toAlign1 toAlign1"; }
+
+    .toAlign1 {
+      grid-area: toAlign1;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "fleft fright"; }
+
+    .fleft {
+      grid-area: fleft;
+      text-align: left; }
+
+    .fright {
+      grid-area: fright; } }
+  /*img{
+    height: 300px;
+    width: 80%;
+  }*/ }
+
+/*# sourceMappingURL=styles.css.map */

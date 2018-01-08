@@ -1,0 +1,449 @@
+body{
+  background-color: white;
+  // lightblue
+  text-align: center;
+  font-family: century schoolbook;
+  // color: #882024;
+  color: #a88b21;
+  //color: blue;
+  // font-size: 200%;
+}
+
+a{
+  text-decoration: none;
+  color: #a88b21;
+  //text-decoration-color: #882024;
+}
+
+/*h3{
+  font-size: 150%;
+}*/
+
+p{
+  // font-size: 100%;
+}
+
+section{
+  // background-color: white;
+}
+
+.map{
+}
+
+
+.jubilee{
+  height: 200px;
+  color: #a88b21;
+  background-color: white;
+  font-size: 150%;
+  padding-top: 20px;
+}
+
+.kontakt{
+  background-color: #882024;
+  text-align: right;
+  color: #a88b21;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  // width: 100%;
+}
+
+.logo{
+  background-color: white;
+  width: 80%;
+  text-align: left;
+  padding: 5px;
+  height: auto;
+}
+
+// re-write this
+nav{
+  text-align: right;
+  // padding-top: 10px;
+  padding-right: 10px;
+}
+
+.produkt{
+  // background-color: #a88b21;
+}
+
+footer{
+  background-color: #882024;
+  color: #a88b21;
+}
+
+
+.fleft{
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.icons{
+  text-align: right;
+  padding-right: 10px;
+  // padding-left: 10px;
+  padding-top: 10px;
+}
+
+.iconSpacing{
+  padding-left: 10px;
+}
+
+
+.button{
+  background-color: #3f281a;//#4CAF50;
+  border: none;
+  color: #a88b21;//white;
+  padding: 15px 80px;//15px 32px
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*.wrapper{
+  // width: 80%;
+  // margin: auto;
+}*/
+
+.jcolor{
+  // background-color: #a88b21;
+}
+
+// to align footer content
+/*.toAlign{
+  width: 80%;
+  // background-color: lightblue;
+  margin: auto;
+}*/
+
+// code for ipads
+@supports (grid-area: auto){
+  @media screen and (min-width: 600px){
+    body{
+      display: grid;
+      color: #a88b21;
+      nav {
+        text-align: right;
+        padding-top: 120px;
+        padding-right: 5px;
+      }
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "sec1 sec1"
+              "wrapper1 wrapper1"
+                //"sec2 sec2"
+                //"sec3 sec3"
+                //"sec4 sec4" // image and text
+                //"sec5 sec5" // video and text
+                //"sec6 sec8" // map
+                // "sec6_1 sec6_1" // is not displayed
+                //"sec7 sec9"
+                //"sec10 sec10"
+              "footer footer";
+    }
+
+    .sec1{
+      grid-area: sec1;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "toAlign2 toAlign2";
+      // background-color: lightblue;
+    }
+
+    .toAlign2{
+      grid-area: toAlign2;
+      width: 80%;
+      margin: auto;
+    }
+
+    .wrapper1{
+      grid-area: wrapper1;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "sec2 sec2_2" //logo and Om Os
+              "sec3 sec3"  // video1
+              "sec4 sec5"  // image1 and text
+              "sec6 sec7"  // image2 and text
+              "sec8 sec8"  // video2
+              "sec9 sec9"  // text
+              "sec10 sec10"; // map
+    }
+
+    .sec2{
+      grid-area: sec2;
+      // for the logo
+      img{
+        height: auto;
+        width: 80%;
+      }
+      //height: 200px;
+      // background-color: white;
+      //text-align: left;
+      // width: 50%;
+    }
+
+    .sec2_2{
+      grid-area: sec2_2;
+    }
+
+    // video1
+    .sec3{
+      grid-area: sec3;
+      width: 100%;
+    }
+
+    .sec4{
+      grid-area: sec4;
+    }
+
+    .sec5{
+      grid-area: sec5;
+      background-color: white;
+      h3{
+        font-size: 100%;
+      }
+      padding: 1px;
+    }
+
+    .sec6{
+      grid-area: sec6;
+      // background-color: white;
+    }
+
+    // is not displayed
+    /*.sec6_1{
+      grid-area: sec6_1;
+    }*/
+
+    .sec7{
+      grid-area: sec7;
+      h3{
+        font-size: 100%;
+      }
+      padding: 1px;
+    }
+
+    // video2
+    .sec8{
+      grid-area: sec8;
+      width: 100%;
+    }
+
+    .sec9{
+      grid-area: sec9;
+    }
+
+    //map
+    .sec10{
+      grid-area: sec10;
+      width: 100%;
+      // height: 250px;
+    }
+
+    footer{
+      grid-area: footer;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "toAlign1 toAlign1"; // footer left, footer right
+    }
+
+    .toAlign1{
+      grid-area: toAlign1;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "fleft fright";
+    }
+
+    .fleft{
+      grid-area: fleft;
+      text-align: left;
+    }
+    .fright{
+      grid-area: fright;
+    }
+
+
+    .jcolor{
+      // background-color: #a88b21;
+    }
+  }
+}
+
+
+// code for "Om jubilæum" page PC
+@supports (grid-area: auto){
+  @media screen and (min-width: 800px){
+    body{
+      //width: 950px;  // added last
+      margin: auto; // added last
+      //color: #882024; //added last
+      color: #a88b21;
+      nav {
+        text-align: right;
+        padding-top: 120px;
+        padding-right: 10px;
+      }
+      display: grid;
+      // background-color: #a88b21;
+      //background-color: gainsboro;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "sec1 sec1"
+              "wrapper1 wrapper1"
+                //"sec2 sec2_2"
+                //"sec3 sec3"
+                //"sec4 sec5"
+                //"sec6 sec7"
+                //"sec8 sec8"
+                //"sec9 sec9"
+                //"sec10 sec10"
+              "footer footer";
+    }
+
+    .sec1{
+      grid-area: sec1;
+      text-align: right;
+    }
+
+    .wrapper1{
+      display: grid;
+      width: 80%;
+      margin: auto;
+      grid-area: wrapper1;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "sec2 sec2_2" // logo and om os
+              "sec3 sec3" // video1
+              "sec4 sec5" // image1 and text
+              "sec6 sec7" // image2 and text
+              "sec8 sec8" // video2
+              "sec9 sec9" // text
+              "sec10 sec10"; // map
+    }
+
+
+
+    .sec2{
+      grid-area: sec2;
+      text-align: left;
+      // for the logo
+      img{
+        height: auto;//150px
+        width: 80%;//auto
+      }
+    }
+
+    .sec2_2{
+      grid-area: sec2_2;
+      background-color: white;
+    }
+
+    .sec3{
+      grid-area: sec3;
+      // for the large image
+      // img{
+      //height: auto;//auto,500px
+      //width: 100%;//90%
+      //}
+    }
+
+    // for the images and text section
+    .sec4{
+      grid-area: sec4;
+      padding: 15px;
+    }
+
+    .sec5{
+      grid-area: sec5;
+      background-color: white;
+      padding: 5px;
+      h3{
+        font-size: 150%;
+      }
+    }
+
+    // image
+    .sec6{
+      grid-area: sec6;
+      padding: 15px;
+    }
+
+    .sec7{
+      grid-area: sec7;
+      background-color: white;
+      padding: 5px;
+      h3{
+        font-size: 150%;
+      }
+    }
+
+    .sec8{
+      grid-area: sec8;
+    }
+
+    .sec9{
+      grid-area: sec9;
+      background-color: white;
+      padding: 5px;
+    }
+
+    .sec10{
+      grid-area: sec10;
+      width: 100%;
+      // height: 400px;
+    }
+
+    footer{
+      grid-area: footer;
+      // text-align: left;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "toAlign1 toAlign1"; // footer left, footer right
+    }
+
+    .toAlign1{
+      grid-area: toAlign1;
+      // background-color: lightblue;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "fleft fright";
+    }
+    .fleft{
+      grid-area: fleft;
+      text-align: left;
+    }
+    .fright{
+      grid-area: fright;
+    }
+
+
+    // introduced to make background brown again
+    .jcolor{
+      // background-color: #a88b21;
+      // width: 950px;
+      // margin: auto;
+    }
+  }
+
+  /*img{
+    height: 300px;
+    width: 80%;
+  }*/
+}
